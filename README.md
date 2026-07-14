@@ -41,6 +41,8 @@ All queries are in [`fmcg_sales_analysis.sql`](fmcg_sales_analysis.sql).
 
 Promotions lift both units and revenue by ~95%, making promotional activity highly effective and worth protecting in the plan.
 
+![Promotions roughly double sales — DBeaver query and result](promotion_result.png)
+
 **2. Yogurt is the engine of the business.** It alone accounts for ~41% of all revenue; Juice is by far the smallest category.
 
 | Category | Revenue | Units |
@@ -50,6 +52,8 @@ Promotions lift both units and revenue by ~95%, making promotional activity high
 | ReadyMeal | £3,576,348 | 678,842 |
 | SnackBar | £3,401,349 | 647,353 |
 | Juice | £652,277 | 124,349 |
+
+![Revenue by category — DBeaver query and result](category_revenue.png)
 
 **3. Growth surged, then plateaued.** Revenue jumped sharply from 2022 to 2023, then held roughly flat into 2024 — worth investigating what stalled momentum.
 
