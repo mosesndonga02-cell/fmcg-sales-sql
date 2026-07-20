@@ -1,7 +1,7 @@
 # FMCG Daily Sales Analysis (2022–2024) — SQL
 
 **Author:** Moses Ndonga
-**Tools:** SQL (SQLite) · DBeaver
+**Tools:** SQL (SQLite & Snowflake) · DBeaver
 **Dataset:** [FMCG Daily Sales Data 2022–2024 (Kaggle)](https://www.kaggle.com/datasets/beatafaron/fmcg-daily-sales-data-to-2022-2024) — ~190,000 daily sales records
 
 ## Overview
@@ -9,6 +9,14 @@
 This project analyses three years of daily fast-moving-consumer-goods (FMCG) sales — milk, yogurt, ready meals, juice and snack bars — across three sales channels (Retail, Discount, E-commerce) and three regions. The goal is to answer the questions a grocery business asks every day: which categories, brands and channels drive revenue, whether promotions actually work, and where sales are being lost to stock gaps — so the business can make better range, pricing and availability decisions.
 
 The dataset is used as a realistic stand-in for the kind of store-and-product analysis a large grocer (e.g. Sainsbury's) performs on its own data.
+
+## Also reproduced in Snowflake
+
+To demonstrate cloud data warehouse skills, I reproduced this entire analysis in **Snowflake**. I loaded the ~190,000-row CSV into a Snowflake table, rebuilt the cleaned `clean_sales` view, and re-ran all 12 queries — adapting the SQL from SQLite to Snowflake's dialect (e.g. `strftime()` → `YEAR()` / `MONTH()` for the date-based queries).
+
+All results matched the original SQLite output exactly (total revenue £19,951,543; 190,754 clean records; promotions lifting average revenue per record from £91.50 to £179.26).
+
+The Snowflake version of the script is in [`fmcg_sales_analysis_snowflake.sql`](fmcg_sales_analysis_snowflake.sql).
 
 ## Approach
 
