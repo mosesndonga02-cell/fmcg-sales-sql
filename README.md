@@ -16,6 +16,8 @@ To demonstrate cloud data warehouse skills, I reproduced this entire analysis in
 
 All results matched the original SQLite output exactly (total revenue £19,951,543; 190,754 clean records; promotions lifting average revenue per record from £91.50 to £179.26).
 
+![Promotion effectiveness reproduced in Snowflake](snowflake_verification.png)
+
 The Snowflake version of the script is in [`fmcg_sales_analysis_snowflake.sql`](fmcg_sales_analysis_snowflake.sql).
 
 ## Approach
