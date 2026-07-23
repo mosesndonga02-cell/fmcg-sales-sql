@@ -20,6 +20,8 @@ All results matched the original SQLite output exactly (total revenue £19,951,5
 
 The Snowflake version of the script is in [`fmcg_sales_analysis_snowflake.sql`](fmcg_sales_analysis_snowflake.sql).
 
+This analysis was subsequently rebuilt as a governed dbt pipeline with automated testing and lineage — see [fmcg-dbt-snowflake](https://github.com/mosesndonga02-cell/fmcg-dbt-snowflake).
+
 ## Approach
 
 1. **Loaded** the raw CSV into a SQLite database as a `sales` table (~190,757 rows).
